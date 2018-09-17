@@ -74,7 +74,10 @@ namespace SuperAdventure
             rtbLocation.Text += newLocation.Description + Environment.NewLine;
 
             // Completely heal the player
-            _player.CurrentHitPoints = _player.MaximumHitPoints;
+            if (_player.CurrentLocation.ID == World.LOCATION_ID_HOME)
+            {
+                _player.CurrentHitPoints = _player.MaximumHitPoints;
+            }
 
             // Update Hit Points in UI
             lblHitPoints.Text = _player.CurrentHitPoints.ToString();
