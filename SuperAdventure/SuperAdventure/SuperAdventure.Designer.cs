@@ -177,41 +177,41 @@
             // 
             // btnNorth
             // 
+            this.btnNorth.AutoSize = true;
             this.btnNorth.Location = new System.Drawing.Point(493, 433);
             this.btnNorth.Name = "btnNorth";
             this.btnNorth.Size = new System.Drawing.Size(75, 23);
             this.btnNorth.TabIndex = 14;
-            this.btnNorth.Text = "North";
             this.btnNorth.UseVisualStyleBackColor = true;
             this.btnNorth.Click += new System.EventHandler(this.btnNorth_Click);
             // 
             // btnEast
             // 
+            this.btnEast.AutoSize = true;
             this.btnEast.Location = new System.Drawing.Point(573, 457);
             this.btnEast.Name = "btnEast";
             this.btnEast.Size = new System.Drawing.Size(75, 23);
             this.btnEast.TabIndex = 15;
-            this.btnEast.Text = "East";
             this.btnEast.UseVisualStyleBackColor = true;
             this.btnEast.Click += new System.EventHandler(this.btnEast_Click);
             // 
             // btnSouth
             // 
+            this.btnSouth.AutoSize = true;
             this.btnSouth.Location = new System.Drawing.Point(493, 487);
             this.btnSouth.Name = "btnSouth";
             this.btnSouth.Size = new System.Drawing.Size(75, 23);
             this.btnSouth.TabIndex = 16;
-            this.btnSouth.Text = "South";
             this.btnSouth.UseVisualStyleBackColor = true;
             this.btnSouth.Click += new System.EventHandler(this.btnSouth_Click);
             // 
             // btnWest
             // 
+            this.btnWest.AutoSize = true;
             this.btnWest.Location = new System.Drawing.Point(412, 457);
             this.btnWest.Name = "btnWest";
             this.btnWest.Size = new System.Drawing.Size(75, 23);
             this.btnWest.TabIndex = 17;
-            this.btnWest.Text = "West";
             this.btnWest.UseVisualStyleBackColor = true;
             this.btnWest.Click += new System.EventHandler(this.btnWest_Click);
             // 

@@ -15,7 +15,8 @@ namespace SuperAdventure
     public partial class SuperAdventure : Form
     {
         private Player _player;
-        private Monster _currentMonster;
+        private Monster _currentMonster;       
+        
 
         public SuperAdventure()
         {
@@ -62,12 +63,32 @@ namespace SuperAdventure
 
             // Update the player's current location
             _player.CurrentLocation = newLocation;
+            btnNorth.Text = _player.CurrentLocation.LocationToNorth.Name;
 
             // Show/hide available movement buttons
             btnNorth.Visible = (newLocation.LocationToNorth != null);
             btnEast.Visible = (newLocation.LocationToEast != null);
             btnSouth.Visible = (newLocation.LocationToSouth != null);
             btnWest.Visible = (newLocation.LocationToWest != null);
+
+            //Display next location name
+            if (btnNorth.Visible)
+            {
+                btnNorth.Text = _player.CurrentLocation.LocationToNorth.Name;
+            }
+
+            if (btnEast.Visible)
+            {
+                btnEast.Text = _player.CurrentLocation.LocationToEast.Name;
+            }
+            if (btnSouth.Visible)
+            {
+                btnSouth.Text = _player.CurrentLocation.LocationToSouth.Name;
+            }
+            if (btnWest.Visible)
+            {
+                btnWest.Text = _player.CurrentLocation.LocationToWest.Name;
+            }
 
             // Display current location name and description
             rtbLocation.Text = newLocation.Name + Environment.NewLine;
