@@ -12,7 +12,7 @@ namespace Engine
 
         public HealingPotion(int id, string name, string namePlural, int amountToHeal) : base(id, name, namePlural)
         {
-            AmountToHeal = AmountToHeal;
+            AmountToHeal = amountToHeal;
         }
     }
 }

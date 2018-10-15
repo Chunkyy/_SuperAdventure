@@ -37,7 +37,7 @@
             this.lblExperience = new System.Windows.Forms.Label();
             this.lvlLevel = new System.Windows.Forms.Label();
             this.lblLevel = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblaction = new System.Windows.Forms.Label();
             this.cboWeapons = new System.Windows.Forms.ComboBox();
             this.cboPotions = new System.Windows.Forms.ComboBox();
             this.btnUseWeapon = new System.Windows.Forms.Button();
@@ -130,14 +130,14 @@
             this.lblLevel.Size = new System.Drawing.Size(0, 13);
             this.lblLevel.TabIndex = 8;
             // 
-            // label5
+            // lblaction
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(617, 531);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Select action";
+            this.lblaction.AutoSize = true;
+            this.lblaction.Location = new System.Drawing.Point(617, 531);
+            this.lblaction.Name = "lblaction";
+            this.lblaction.Size = new System.Drawing.Size(69, 13);
+            this.lblaction.TabIndex = 9;
+            this.lblaction.Text = "Select action";
             // 
             // cboWeapons
             // 
@@ -183,6 +183,7 @@
             this.btnNorth.Size = new System.Drawing.Size(75, 23);
             this.btnNorth.TabIndex = 14;
             this.btnNorth.UseVisualStyleBackColor = true;
+            this.btnNorth.Visible = false;
             this.btnNorth.Click += new System.EventHandler(this.btnNorth_Click);
             // 
             // btnEast
@@ -193,6 +194,7 @@
             this.btnEast.Size = new System.Drawing.Size(75, 23);
             this.btnEast.TabIndex = 15;
             this.btnEast.UseVisualStyleBackColor = true;
+            this.btnEast.Visible = false;
             this.btnEast.Click += new System.EventHandler(this.btnEast_Click);
             // 
             // btnSouth
@@ -203,6 +205,7 @@
             this.btnSouth.Size = new System.Drawing.Size(75, 23);
             this.btnSouth.TabIndex = 16;
             this.btnSouth.UseVisualStyleBackColor = true;
+            this.btnSouth.Visible = false;
             this.btnSouth.Click += new System.EventHandler(this.btnSouth_Click);
             // 
             // btnWest
@@ -213,6 +216,7 @@
             this.btnWest.Size = new System.Drawing.Size(75, 23);
             this.btnWest.TabIndex = 17;
             this.btnWest.UseVisualStyleBackColor = true;
+            this.btnWest.Visible = false;
             this.btnWest.Click += new System.EventHandler(this.btnWest_Click);
             // 
             // rtbLocation
@@ -282,7 +286,7 @@
             this.Controls.Add(this.btnUseWeapon);
             this.Controls.Add(this.cboPotions);
             this.Controls.Add(this.cboWeapons);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblaction);
             this.Controls.Add(this.lblLevel);
             this.Controls.Add(this.lvlLevel);
             this.Controls.Add(this.lblExperience);
@@ -312,7 +316,7 @@
         private System.Windows.Forms.Label lblExperience;
         private System.Windows.Forms.Label lvlLevel;
         private System.Windows.Forms.Label lblLevel;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblaction;
         private System.Windows.Forms.ComboBox cboWeapons;
         private System.Windows.Forms.ComboBox cboPotions;
         private System.Windows.Forms.Button btnUseWeapon;
