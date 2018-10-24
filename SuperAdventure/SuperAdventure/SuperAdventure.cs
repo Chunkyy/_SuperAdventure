@@ -536,5 +536,19 @@ namespace SuperAdventure
         {
             File.WriteAllText(PLAYER_DATA_FILE_NAME, _player.ToXmlString());
         }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _player = Player.CreateDefaultPlayer();
+
+            MoveTo(_player.CurrentLocation);
+
+            UpdatePlayerStats();
+        }
+
+        private void SuperAdventure_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
