@@ -467,7 +467,7 @@ namespace SuperAdventure
                 if (_player.CurrentHitPoints <= 0)
                 {
                     // Display message
-                    MessageBox.Show("The " + _currentMonster.Name + " killed you.");
+                    MessageBox.Show("The " + _currentMonster.Name + " killed you. Play again.");
 
                     // Move player to "Home"
                     MoveTo(World.LocationByID(World.LOCATION_ID_HOME));
