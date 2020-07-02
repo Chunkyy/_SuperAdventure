@@ -466,6 +466,7 @@ namespace SuperAdventure
 
                 if (_player.CurrentHitPoints <= 0)
                 {
+                    lblHitPoints.Text = "0";
                     // Display message
                     MessageBox.Show("The " + _currentMonster.Name + " killed you. Play again.");
 
