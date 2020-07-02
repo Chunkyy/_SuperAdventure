@@ -467,11 +467,17 @@ namespace SuperAdventure
                 if (_player.CurrentHitPoints <= 0)
                 {
                     // Display message
-                    rtbMessages.Text += "The " + _currentMonster.Name + " killed you." + Environment.NewLine;
-                    ScrollToBottomOfMessages();
+                    MessageBox.Show("The " + _currentMonster.Name + " killed you.");
 
                     // Move player to "Home"
                     MoveTo(World.LocationByID(World.LOCATION_ID_HOME));
+
+                    // Restart Game
+                    _player = Player.CreateDefaultPlayer();
+
+                    UpdatePlayerStats();
+
+                    rtbMessages.Clear();
                 }
             }
         }
