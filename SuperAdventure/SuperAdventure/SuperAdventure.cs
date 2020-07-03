@@ -479,6 +479,8 @@ namespace SuperAdventure
                     UpdatePlayerStats();
 
                     rtbMessages.Clear();
+                    UpdateInventoryListInUI();
+                    UpdateQuestListInUI();
                 }
             }
         }
